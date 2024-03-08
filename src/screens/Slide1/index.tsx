@@ -11,12 +11,14 @@ export function Slide1({setPageI}:IPagina){
         <ImageBackground source={slide} style={styleContainer.container} >
             <View style ={styles.container}>
             <Image source={logo}></Image>
-            <Text style={styles.text}>Book Dream</Text>
+            <Text style={styles.textPrincipal}>Book</Text>
+            <Text style={styles.textPrincipal2}>Dream</Text>
+            <Text style={styles.text}>Sua Biblioteca Pessoal</Text>
             <View style={styles.containerButton}>
-            <ButtonSlide style={styles.butt} onPressI={() => setPageI(1)}/>
-            <ButtonSlide style={styles.butt} onPressI={() => setPageI(2)}/>
-            <ButtonSlide style={styles.butt} onPressI={() => setPageI(3)}/>
-            <ButtonSlide style={styles.butt} onPressI={() => setPageI(4)}/>            
+                <ButtonSlide style={styles.butt} onPressI={() => setPageI(1)}/>
+                <ButtonSlide style={styles.butt} onPressI={() => setPageI(2)}/>
+                <ButtonSlide style={styles.butt} onPressI={() => setPageI(3)}/>
+                <ButtonSlide style={styles.butt} onPressI={() => setPageI(4)}/>            
 
 
             </View>
