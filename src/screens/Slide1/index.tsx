@@ -1,29 +1,26 @@
-import { ImageBackground, Image, View, StyleSheet, Text} from "react-native";
-import {styleContainer, colors} from "../../styles/GlobalStyle"
+import { ImageBackground, Image, View, StyleSheet, Text } from "react-native";
+import { styleContainer, colors } from "../../styles/GlobalStyle"
 import { styles } from "./styles"
 import { IPagina } from "../../../App";
-import{ ButtonSlide} from "../../components/ButtonSlide"
+import { ButtonSlide } from "../../components/ButtonSlide"
 
-export function Slide1({setPageI}:IPagina){
+export function Slide1({ setPageI }: IPagina) {
     const slide = require('../../assets/fundo1.png')
     const logo = require('../../assets/logo.png')
-    return(
+    return (
         <ImageBackground source={slide} style={styleContainer.container} >
-            <View style ={styles.container}>
-            <Image source={logo}></Image>
-            <Text style={styles.textPrincipal}>Book</Text>
-            <Text style={styles.textPrincipal2}>Dream</Text>
-            <Text style={styles.text}>Sua Biblioteca Pessoal</Text>
-            <View style={styles.containerButton}>
-                <ButtonSlide style={styles.butt} onPressI={() => setPageI(1)}/>
-                <ButtonSlide style={styles.butt} onPressI={() => setPageI(2)}/>
-                <ButtonSlide style={styles.butt} onPressI={() => setPageI(3)}/>
-                <ButtonSlide style={styles.butt} onPressI={() => setPageI(4)}/>            
-
-
+            <View style={styles.container}>
+                <Image source={logo}/>
+                <Text style={styles.textPrincipal}>˚⋅𓂃 ִֶָ࣪ Book</Text>
+                <Text style={styles.textPrincipal2}>Dream！</Text>
+                <Text style={styles.text}>Sua Biblioteca Pessoal</Text>
             </View>
-           
-           </View>
+            <View style={styles.containerButton}>
+                <ButtonSlide style={styles.butt} onPressI={() => setPageI(1)} />
+                <ButtonSlide style={styles.butt} onPressI={() => setPageI(2)} />
+                <ButtonSlide style={styles.butt} onPressI={() => setPageI(3)} />
+                <ButtonSlide style={styles.butt} onPressI={() => setPageI(4)} />
+            </View>
         </ImageBackground>
     )
 }
