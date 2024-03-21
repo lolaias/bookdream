@@ -22,23 +22,10 @@ export const styles = StyleSheet.create({
   },
 
   quadro: {
-    backgroundColor: colors.SoftWite,
-    height: 350,
-    width: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 500,
 
 },
 
-  linha1: {
-    backgroundColor: colors.SoftBlack,
-    height:70,
-    width: 100,
-    paddingLeft:460,
-    },
-  linha2: {
-    backgroundColor: colors.SoftBlack,
-    height:70,
-    width: 100,
-    paddingLeft:460,
-
-  },
 })

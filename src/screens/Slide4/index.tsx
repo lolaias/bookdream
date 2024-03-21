@@ -6,17 +6,16 @@ import { ButtonSlide } from "../../components/ButtonSlide"
 
 export function Slide4({ setPageI }: IPagina) {
     const slide = require('../../assets/fundo1.png')
-    const quadro = require('../../assets/quadro.png')
-    const linha = require('../../assets/linha.png')
+    const quadro = require('../../assets/login.png')
+    
     return (
         <ImageBackground source={slide} style={styleContainer.container} >
-            <View style={styles.quadro}>
-                <View style={styles.linha1}>
-                    <View style={styles.linha2}>
+            <View style={styles.container}>
+             <Image source={quadro}>
+
+             </Image>
                         
                     </View>
-                </View>
-            </View>
             <View style={styles.containerButton}>
                 <ButtonSlide style={styles.butt} onPressI={() => setPageI(1)} />
                 <ButtonSlide style={styles.butt} onPressI={() => setPageI(2)} />
